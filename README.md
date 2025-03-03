@@ -1,0 +1,5 @@
+### Credit card statement .txt copy paste from PDF statements to .csv converter
+
+Little tool I made for myself that requires a limited amount of manual input to change PDF statements from my bank into csv files I can use with google sheets to track spending easier. In your editor launch the file with `py manipulator.py` and follow the printed prompts for what to do. For year and month entries, blank inputs should use the current year and month respectively. Output csv files get dumped into `root/modified/{2 digit year}/filename.csv`. Manually created txt files need to be placed in `root/Files/{4 digit  year}/Month .txt`, all of mine are `Month Year Statement.txt` but honestly just having the month and a space after it suffices based on how it's written currently.
+
+There is a demofile.txt contained in root that shows how you should have the cc statements converted over into text files to work with the program. If there is no `root/Files/` folder or there are no year folders contained within `root/Files` the program will ask you if you want to move `demofile.txt` into `root/Files/{Current Year}` to demo the system.
